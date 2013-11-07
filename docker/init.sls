@@ -12,3 +12,9 @@ docker:
     - pkgs:
       - linux-image-extra-{{ grains.get('kernelrelease') }}
       - lxc-docker
+  service.running:
+    - require:
+      - pkg: docker
+    - enable: True
+    - watch:
+      - pkg: docker
