@@ -17,6 +17,7 @@ jenkins:
   service.running:
     - require:
       - pkg: jenkins
+    - enable: True
     - watch:
       - pkg: jenkins
 
