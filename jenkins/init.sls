@@ -1,5 +1,5 @@
 include:
-  - java
+  - openjdk
 
 jenkins:
   pkgrepo.managed:
