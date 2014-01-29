@@ -18,3 +18,5 @@ docker:
     - enable: True
     - watch:
       - pkg: docker
+  group.present:
+    - system: True
